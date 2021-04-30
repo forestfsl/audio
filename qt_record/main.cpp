@@ -1,19 +1,16 @@
 #include "mainwindow.h"
 
 #include <QApplication>
-// 为了使用qDebug函数
-#include <QDebug>
-
-
 
 extern "C" {
-#include <libavcodec/avcodec.h>
+// 设备
+#include <libavdevice/avdevice.h>
 }
 
 int main(int argc, char *argv[])
 {
-    // 打印版本信息
-       qDebug() << av_version_info();
+    //注册设备
+    avdevice_register_all();
     QApplication a(argc, argv);
     MainWindow w;
     w.show();

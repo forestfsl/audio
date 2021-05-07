@@ -42,10 +42,10 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 #DISTFILES += \
  #   mac/Info.plist
-
+CONFIG+=sdk_no_version_check
 macx {
     FFMPEG_HOME = /usr/local/Cellar/ffmpeg/4.3.2_4
-    QMAKE_INFO_PLIST = mac/Info.plist
+    QMAKE_INFO_PLIST =  mac/Info.plist
 }
 
 INCLUDEPATH += $${FFMPEG_HOME}/include
@@ -54,3 +54,4 @@ LIBS += -L $${FFMPEG_HOME}/lib \
         -lavdevice \
         -lavformat \
         -lavutil
+

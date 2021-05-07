@@ -13,7 +13,7 @@ extern "C" {
 }
 
 #define FMT_NAME "avfoundation"
-#define DEVICE_NAME "0"
+#define DEVICE_NAME ":0"
 #define FILEPATH "/Users/songlin/audio/qt_record"
 
 AudioThread::AudioThread(QObject *parent) : QThread(parent) {
@@ -46,6 +46,10 @@ void showSpec(AVFormatContext *ctx) {
     qDebug() << params->format;
     // 每一个样本的一个声道占用多少个字节
     qDebug() << av_get_bytes_per_sample((AVSampleFormat) params->format);
+    // 编码ID（可以看出采样格式）
+    qDebug() << params->codec_id;
+    // 每一个样本的一个声道占用多少位（这个函数需要用到avcodec库）
+    qDebug() << av_get_bits_per_sample(params->codec_id);
 }
 
 // 当线程启动的时候（start），就会自动调用run函数

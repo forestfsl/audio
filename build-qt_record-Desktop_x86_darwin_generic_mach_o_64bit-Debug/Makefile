@@ -180,7 +180,6 @@ DIST          = /usr/local/Cellar/qt/6.0.3/share/qt/mkspecs/features/spec_pre.pr
 		/usr/local/Cellar/qt/6.0.3/share/qt/mkspecs/features/qt_config.prf \
 		/usr/local/Cellar/qt/6.0.3/share/qt/mkspecs/macx-clang/qmake.conf \
 		/usr/local/Cellar/qt/6.0.3/share/qt/mkspecs/features/spec_post.prf \
-		../qt_record/.qmake.stash \
 		/usr/local/Cellar/qt/6.0.3/share/qt/mkspecs/features/exclusive_builds.prf \
 		/usr/local/Cellar/qt/6.0.3/share/qt/mkspecs/features/mac/sdk.prf \
 		/usr/local/Cellar/qt/6.0.3/share/qt/mkspecs/features/toolchain.prf \
@@ -221,7 +220,7 @@ TARGET        = qt_record.app/Contents/MacOS/qt_record
 EXPORT_QMAKE_MAC_SDK = macosx
 EXPORT_QMAKE_MAC_SDK_VERSION = 11.1
 EXPORT_QMAKE_XCODE_DEVELOPER_PATH = /Applications/Xcode.app/Contents/Developer
-EXPORT__QMAKE_STASH_ = /Users/songlin/audio/build-qt_record-Desktop_x86_darwin_generic_mach_o_64bit-Debug/.qmake.stash
+EXPORT__QMAKE_STASH_ = 
 EXPORT_VALID_ARCHS = x86_64
 EXPORT_ACTIVE_ARCHS = $(filter $(EXPORT_VALID_ARCHS), $(ARCHS))
 EXPORT_ARCH_ARGS = $(foreach arch, $(if $(EXPORT_ACTIVE_ARCHS), $(EXPORT_ACTIVE_ARCHS), $(EXPORT_VALID_ARCHS)), -arch $(arch))
@@ -355,7 +354,6 @@ Makefile: ../qt_record/qt_record.pro /usr/local/Cellar/qt/6.0.3/share/qt/mkspecs
 		/usr/local/Cellar/qt/6.0.3/share/qt/mkspecs/features/qt_config.prf \
 		/usr/local/Cellar/qt/6.0.3/share/qt/mkspecs/macx-clang/qmake.conf \
 		/usr/local/Cellar/qt/6.0.3/share/qt/mkspecs/features/spec_post.prf \
-		.qmake.stash \
 		/usr/local/Cellar/qt/6.0.3/share/qt/mkspecs/features/exclusive_builds.prf \
 		/usr/local/Cellar/qt/6.0.3/share/qt/mkspecs/features/mac/sdk.prf \
 		/usr/local/Cellar/qt/6.0.3/share/qt/mkspecs/features/toolchain.prf \
@@ -508,7 +506,6 @@ Makefile: ../qt_record/qt_record.pro /usr/local/Cellar/qt/6.0.3/share/qt/mkspecs
 /usr/local/Cellar/qt/6.0.3/share/qt/mkspecs/features/qt_config.prf:
 /usr/local/Cellar/qt/6.0.3/share/qt/mkspecs/macx-clang/qmake.conf:
 /usr/local/Cellar/qt/6.0.3/share/qt/mkspecs/features/spec_post.prf:
-.qmake.stash:
 /usr/local/Cellar/qt/6.0.3/share/qt/mkspecs/features/exclusive_builds.prf:
 /usr/local/Cellar/qt/6.0.3/share/qt/mkspecs/features/mac/sdk.prf:
 /usr/local/Cellar/qt/6.0.3/share/qt/mkspecs/features/toolchain.prf:
@@ -583,7 +580,6 @@ clean: compiler_clean
 
 distclean: clean 
 	-$(DEL_FILE) -r qt_record.app
-	-$(DEL_FILE) .qmake.stash
 	-$(DEL_FILE) Makefile
 
 

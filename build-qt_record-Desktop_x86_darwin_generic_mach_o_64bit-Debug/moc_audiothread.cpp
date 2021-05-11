@@ -7,7 +7,7 @@
 *****************************************************************************/
 
 #include <memory>
-#include "../qt_record/audiothread.h"
+#include "../pcm_to_wav/audiothread.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)

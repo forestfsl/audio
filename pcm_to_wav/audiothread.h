@@ -3,8 +3,7 @@
 
 #include <QThread>
 
-class AudioThread : public QThread
-{
+class AudioThread : public QThread {
     Q_OBJECT
 private:
     void run();
@@ -14,8 +13,8 @@ public:
     explicit AudioThread(QObject *parent = nullptr);
     ~AudioThread();
     void setStop(bool stop);
-
 signals:
+
 };
 
 #endif // AUDIOTHREAD_H

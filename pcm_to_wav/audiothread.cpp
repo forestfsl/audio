@@ -14,8 +14,8 @@ extern "C" {
 }
 
 #define FMT_NAME "avfoundation"
-   #define DEVICE_NAME ":0"
-   #define FILEPATH "/Users/songlin/audio/"
+#define DEVICE_NAME ":0"
+#define FILEPATH "/Users/songlin/audio/pcm_to_wav/"
 
 AudioThread::AudioThread(QObject *parent) : QThread(parent) {
     // 当监听到线程结束时（finished），就调用deleteLater回收内存
@@ -34,22 +34,22 @@ AudioThread::~AudioThread() {
     qDebug() << this << "析构（内存被回收）";
 }
 
-void showSpec(AVFormatContext *ctx){
-    //获取输入流
+void showSpec(AVFormatContext *ctx) {
+    // 获取输入流
     AVStream *stream = ctx->streams[0];
-    //获取音频参数
+    // 获取音频参数
     AVCodecParameters *params = stream->codecpar;
-    //声道数
+    // 声道数
     qDebug() << params->channels;
-    //采样率
+    // 采样率
     qDebug() << params->sample_rate;
-    //采样格式
+    // 采样格式
     qDebug() << params->format;
-    //每一个样本的一个声道占用多少个字节
-    qDebug() << av_get_bytes_per_sample((AVSampleFormat)params->format);
+    // 每一个样本的一个声道占用多少个字节
+    qDebug() << av_get_bytes_per_sample((AVSampleFormat) params->format);
     // 编码ID（可以看出采样格式）
     qDebug() << params->codec_id;
-    // 每一个样本的一个声道占用多少位
+    // 每一个样本的一个声道占用多少位（这个函数需要用到avcodec库）
     qDebug() << av_get_bits_per_sample(params->codec_id);
 }
 
@@ -78,7 +78,7 @@ void AudioThread::run() {
     }
 
     // 打印一下录音设备的参数信息
-    // showSpec(ctx);
+//    showSpec(ctx);
 
     // 文件名
     QString filename = FILEPATH;
@@ -97,6 +97,7 @@ void AudioThread::run() {
         avformat_close_input(&ctx);
         return;
     }
+
 
     // 数据包
     AVPacket pkt;
@@ -147,20 +148,8 @@ void AudioThread::run() {
 
     qDebug() << this << "正常结束----------";
 
-//    char wavHeader[44];
-//    wavHeader[0] = 'R';
-//    wavHeader[1] = 'I';
-//    wavHeader[2] = 'F';
-//    wavHeader[3] = 'F';
-
-//    // 10 00 00 00
-//    wavHeader[4] = 0x10;
-//    wavHeader[5] = 0x00;
-//    wavHeader[6] = 0x00;
-//    wavHeader[7] = 0x00;
 }
 
 void AudioThread::setStop(bool stop) {
     _stop = stop;
 }
-

@@ -7,7 +7,7 @@
 *****************************************************************************/
 
 #include <memory>
-#include "../qt_record/mainwindow.h"
+#include "../pcm_to_wav/mainwindow.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)

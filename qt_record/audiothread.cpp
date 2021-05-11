@@ -14,7 +14,7 @@ extern "C" {
 
 #define FMT_NAME "avfoundation"
 #define DEVICE_NAME ":0"
-#define FILEPATH "/Users/songlin/audio/qt_record"
+#define FILEPATH "/Users/songlin/audio/qt_record/"
 
 AudioThread::AudioThread(QObject *parent) : QThread(parent) {
     // 当监听到线程结束时（finished），就调用deleteLater回收内存

@@ -78,7 +78,7 @@ void AudioThread::run() {
     }
 
     // 打印一下录音设备的参数信息
-//    showSpec(ctx);
+    showSpec(ctx);
 
     // 文件名
     QString filename = FILEPATH;

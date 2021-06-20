@@ -1,0 +1,238 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXFileReference section */
+		078814F52674C91E005AF6FE /* ffmpeg_g */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = ffmpeg_g; sourceTree = "<group>"; };
+		078814F62674C91E005AF6FE /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		078814F72674C91E005AF6FE /* ffmpeg */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = ffmpeg; sourceTree = "<group>"; };
+		078814F82674C91E005AF6FE /* libpostproc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = libpostproc; sourceTree = "<group>"; };
+		078814F92674C91E005AF6FE /* tools */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tools; sourceTree = "<group>"; };
+		078814FA2674C91E005AF6FE /* compat */ = {isa = PBXFileReference; lastKnownFileType = folder; path = compat; sourceTree = "<group>"; };
+		078814FB2674C91E005AF6FE /* RELEASE_NOTES */ = {isa = PBXFileReference; lastKnownFileType = text; path = RELEASE_NOTES; sourceTree = "<group>"; };
+		078814FC2674C91E005AF6FE /* config.asm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm.asm; path = config.asm; sourceTree = "<group>"; };
+		078814FD2674C91E005AF6FE /* .DS_Store */ = {isa = PBXFileReference; lastKnownFileType = file; path = .DS_Store; sourceTree = "<group>"; };
+		078814FE2674C91E005AF6FE /* libavfilter */ = {isa = PBXFileReference; lastKnownFileType = folder; path = libavfilter; sourceTree = "<group>"; };
+		078814FF2674C91E005AF6FE /* libavutil */ = {isa = PBXFileReference; lastKnownFileType = folder; path = libavutil; sourceTree = "<group>"; };
+		078815002674C91E005AF6FE /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		078815012674C91E005AF6FE /* configure */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = configure; sourceTree = "<group>"; };
+		078815022674C91E005AF6FE /* Changelog */ = {isa = PBXFileReference; lastKnownFileType = text; path = Changelog; sourceTree = "<group>"; };
+		078815032674C91E005AF6FE /* libavdevice */ = {isa = PBXFileReference; lastKnownFileType = folder; path = libavdevice; sourceTree = "<group>"; };
+		078815042674C91E005AF6FE /* ffprobe_g */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = ffprobe_g; sourceTree = "<group>"; };
+		078815052674C91E005AF6FE /* fftools */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fftools; sourceTree = "<group>"; };
+		078815062674C91E005AF6FE /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		078815072674C91E005AF6FE /* libavformat */ = {isa = PBXFileReference; lastKnownFileType = folder; path = libavformat; sourceTree = "<group>"; };
+		078815082674C91E005AF6FE /* libswscale */ = {isa = PBXFileReference; lastKnownFileType = folder; path = libswscale; sourceTree = "<group>"; };
+		078815092674C91E005AF6FE /* tests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tests; sourceTree = "<group>"; };
+		0788150A2674C91E005AF6FE /* COPYING.LGPLv2.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = COPYING.LGPLv2.1; sourceTree = "<group>"; };
+		0788150B2674C91E005AF6FE /* INSTALL.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = INSTALL.md; sourceTree = "<group>"; };
+		0788150C2674C91E005AF6FE /* RELEASE */ = {isa = PBXFileReference; lastKnownFileType = text; path = RELEASE; sourceTree = "<group>"; };
+		0788150D2674C91E005AF6FE /* MAINTAINERS */ = {isa = PBXFileReference; lastKnownFileType = text; path = MAINTAINERS; sourceTree = "<group>"; };
+		0788150E2674C91E005AF6FE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0788150F2674C91E005AF6FE /* libavcodec */ = {isa = PBXFileReference; lastKnownFileType = folder; path = libavcodec; sourceTree = "<group>"; };
+		078815102674C91E005AF6FE /* ffbuild */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ffbuild; sourceTree = "<group>"; };
+		078815112674C91E005AF6FE /* libavresample */ = {isa = PBXFileReference; lastKnownFileType = folder; path = libavresample; sourceTree = "<group>"; };
+		078815122674C91E005AF6FE /* VERSION */ = {isa = PBXFileReference; lastKnownFileType = text; path = VERSION; sourceTree = "<group>"; };
+		078815132674C91E005AF6FE /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
+		078815142674C91E005AF6FE /* COPYING.GPLv2 */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYING.GPLv2; sourceTree = "<group>"; };
+		078815152674C91E005AF6FE /* ffprobe */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = ffprobe; sourceTree = "<group>"; };
+		078815162674C91E005AF6FE /* .version */ = {isa = PBXFileReference; lastKnownFileType = text; path = .version; sourceTree = "<group>"; };
+		078815172674C91E005AF6FE /* COPYING.GPLv3 */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYING.GPLv3; sourceTree = "<group>"; };
+		078815182674C91E005AF6FE /* ffmpeg-4.3.2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "ffmpeg-4.3.2.xcodeproj"; sourceTree = "<group>"; };
+		0788151B2674C91E005AF6FE /* doc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = doc; sourceTree = "<group>"; };
+		0788151C2674C91E005AF6FE /* COPYING.LGPLv3 */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYING.LGPLv3; sourceTree = "<group>"; };
+		0788151D2674C91E005AF6FE /* .mailmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = .mailmap; sourceTree = "<group>"; };
+		0788151E2674C91E005AF6FE /* presets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = presets; sourceTree = "<group>"; };
+		0788151F2674C91E005AF6FE /* ffplay_g */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = ffplay_g; sourceTree = "<group>"; };
+		078815202674C91E005AF6FE /* libswresample */ = {isa = PBXFileReference; lastKnownFileType = folder; path = libswresample; sourceTree = "<group>"; };
+		078815212674C91E005AF6FE /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .travis.yml; sourceTree = "<group>"; };
+		078815222674C91E005AF6FE /* CREDITS */ = {isa = PBXFileReference; lastKnownFileType = text; path = CREDITS; sourceTree = "<group>"; };
+		078815232674C91E005AF6FE /* ffplay */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = ffplay; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		078814EF2674C91E005AF6FE = {
+			isa = PBXGroup;
+			children = (
+				078814F52674C91E005AF6FE /* ffmpeg_g */,
+				078814F62674C91E005AF6FE /* LICENSE.md */,
+				078814F72674C91E005AF6FE /* ffmpeg */,
+				078814F82674C91E005AF6FE /* libpostproc */,
+				078814F92674C91E005AF6FE /* tools */,
+				078814FA2674C91E005AF6FE /* compat */,
+				078814FB2674C91E005AF6FE /* RELEASE_NOTES */,
+				078814FC2674C91E005AF6FE /* config.asm */,
+				078814FD2674C91E005AF6FE /* .DS_Store */,
+				078814FE2674C91E005AF6FE /* libavfilter */,
+				078814FF2674C91E005AF6FE /* libavutil */,
+				078815002674C91E005AF6FE /* config.h */,
+				078815012674C91E005AF6FE /* configure */,
+				078815022674C91E005AF6FE /* Changelog */,
+				078815032674C91E005AF6FE /* libavdevice */,
+				078815042674C91E005AF6FE /* ffprobe_g */,
+				078815052674C91E005AF6FE /* fftools */,
+				078815062674C91E005AF6FE /* Makefile */,
+				078815072674C91E005AF6FE /* libavformat */,
+				078815082674C91E005AF6FE /* libswscale */,
+				078815092674C91E005AF6FE /* tests */,
+				0788150A2674C91E005AF6FE /* COPYING.LGPLv2.1 */,
+				0788150B2674C91E005AF6FE /* INSTALL.md */,
+				0788150C2674C91E005AF6FE /* RELEASE */,
+				0788150D2674C91E005AF6FE /* MAINTAINERS */,
+				0788150E2674C91E005AF6FE /* README.md */,
+				0788150F2674C91E005AF6FE /* libavcodec */,
+				078815102674C91E005AF6FE /* ffbuild */,
+				078815112674C91E005AF6FE /* libavresample */,
+				078815122674C91E005AF6FE /* VERSION */,
+				078815132674C91E005AF6FE /* CONTRIBUTING.md */,
+				078815142674C91E005AF6FE /* COPYING.GPLv2 */,
+				078815152674C91E005AF6FE /* ffprobe */,
+				078815162674C91E005AF6FE /* .version */,
+				078815172674C91E005AF6FE /* COPYING.GPLv3 */,
+				078815182674C91E005AF6FE /* ffmpeg-4.3.2.xcodeproj */,
+				0788151B2674C91E005AF6FE /* doc */,
+				0788151C2674C91E005AF6FE /* COPYING.LGPLv3 */,
+				0788151D2674C91E005AF6FE /* .mailmap */,
+				0788151E2674C91E005AF6FE /* presets */,
+				0788151F2674C91E005AF6FE /* ffplay_g */,
+				078815202674C91E005AF6FE /* libswresample */,
+				078815212674C91E005AF6FE /* .travis.yml */,
+				078815222674C91E005AF6FE /* CREDITS */,
+				078815232674C91E005AF6FE /* ffplay */,
+			);
+			sourceTree = "<group>";
+		};
+		078815192674C91E005AF6FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		078814F42674C91E005AF6FE /* ffmpeg-4.3.2 */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = 078815252674C91E005AF6FE /* Build configuration list for PBXLegacyTarget "ffmpeg-4.3.2" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "/Users/songlin/audio/ffmpeg-4.3.2";
+			dependencies = (
+			);
+			name = "ffmpeg-4.3.2";
+			passBuildSettingsInEnvironment = 1;
+			productName = "ffmpeg-4.3.2";
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		078814F02674C91E005AF6FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 078814F32674C91E005AF6FE /* Build configuration list for PBXProject "ffmpeg-4.3.2 2" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 078814EF2674C91E005AF6FE;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 078815192674C91E005AF6FE /* Products */;
+					ProjectRef = 078815182674C91E005AF6FE /* ffmpeg-4.3.2.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				078814F42674C91E005AF6FE /* ffmpeg-4.3.2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		078814F12674C91E005AF6FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		078814F22674C91E005AF6FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		078815262674C91E005AF6FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "ffmpeg-4.3.2";
+			};
+			name = Debug;
+		};
+		078815272674C91E005AF6FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "ffmpeg-4.3.2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		078814F32674C91E005AF6FE /* Build configuration list for PBXProject "ffmpeg-4.3.2 2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				078814F12674C91E005AF6FE /* Debug */,
+				078814F22674C91E005AF6FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		078815252674C91E005AF6FE /* Build configuration list for PBXLegacyTarget "ffmpeg-4.3.2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				078815262674C91E005AF6FE /* Debug */,
+				078815272674C91E005AF6FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 078814F02674C91E005AF6FE /* Project object */;
+}
